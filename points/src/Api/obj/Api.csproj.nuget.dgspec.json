@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/api/api.csproj": {}
+    "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Api/Api.csproj": {}
   },
   "projects": {
-    "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/api/api.csproj": {
+    "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Api/Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/api/api.csproj",
-        "projectName": "api",
-        "projectPath": "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/api/api.csproj",
+        "projectUniqueName": "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Api/Api.csproj",
+        "projectName": "Api",
+        "projectPath": "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Api/Api.csproj",
         "packagesPath": "/home/melkdesousa/.nuget/packages/",
-        "outputPath": "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/api/obj/",
+        "outputPath": "/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/melkdesousa/.nuget/NuGet/NuGet.Config"
