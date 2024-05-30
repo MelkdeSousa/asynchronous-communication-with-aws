@@ -1,0 +1,14 @@
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/bin/Debug/net6.0/Database.deps.json
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/bin/Debug/net6.0/Database.runtimeconfig.json
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/bin/Debug/net6.0/Database.dll
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/bin/Debug/net6.0/Database.pdb
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/Database.csproj.AssemblyReference.cache
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/Database.GeneratedMSBuildEditorConfig.editorconfig
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/Database.AssemblyInfoInputs.cache
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/Database.AssemblyInfo.cs
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/Database.csproj.CoreCompileInputs.cache
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/Database.dll
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/refint/Database.dll
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/Database.pdb
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/Database.genruntimeconfig.cache
+/home/melkdesousa/developer/labs/asynchronous-communication-with-aws/points/src/Database/obj/Debug/net6.0/ref/Database.dll
