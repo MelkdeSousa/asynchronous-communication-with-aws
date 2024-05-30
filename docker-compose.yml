@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+    db-points:
+        image: bitnami/postgresql:latest
+        ports:
+            - "5431:5432"
+        environment:
+            - POSTGRESQL_USER=docker
+            - POSTGRESQL_PASSWORD=docker
+            - POSTGRESQL_DATABASE=points
+        volumes:
+            - pg_data_points:/bitnami/postgresql
+
+volumes:
+    pg_data_points:
