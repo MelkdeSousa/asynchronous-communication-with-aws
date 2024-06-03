@@ -18,16 +18,13 @@ builder.Services.AddDatabase();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 
-    app.UseScalar(options =>
-    {
-        options.RoutePrefix = "docs";
-    });
-}
+app.UseScalar(options =>
+{
+    options.RoutePrefix = "docs";
+});
 
 app.UseHttpsRedirection();
 
