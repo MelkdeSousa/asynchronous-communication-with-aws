@@ -6,7 +6,7 @@ services:
         ports:
             - "5431:5432"
         environment:
-            - POSTGRESQL_USER=docker
+            - POSTGRESQL_USERNAME=docker
             - POSTGRESQL_PASSWORD=docker
             - POSTGRESQL_DATABASE=points
         volumes:
