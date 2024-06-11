@@ -1,0 +1,14 @@
+
+### Listar usuarios
+GET http://localhost:8080/users
+
+### Criar um usuario
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name":"melkdesousa"
+}
+
+### Pegar um usuario
+GET http://localhost:8080/users/2f96ed64-ffeb-48eb-94d7-92d33de6e92f
