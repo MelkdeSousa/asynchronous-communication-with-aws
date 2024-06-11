@@ -11,6 +11,18 @@ services:
             - POSTGRESQL_DATABASE=points
         volumes:
             - pg_data_points:/bitnami/postgresql
+    
+    db-users:
+        image: bitnami/postgresql:latest
+        ports:
+            - "5430:5432"
+        environment:
+            - POSTGRESQL_USERNAME=docker
+            - POSTGRESQL_PASSWORD=docker
+            - POSTGRESQL_DATABASE=users
+        volumes:
+            - pg_data_users:/bitnami/postgresql
 
 volumes:
     pg_data_points:
+    pg_data_users:
