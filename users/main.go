@@ -5,6 +5,7 @@ import (
 
 	"github.com/melkdesousa/wottva/users/api/handlers"
 	"github.com/melkdesousa/wottva/users/internal/database"
+	"github.com/melkdesousa/wottva/users/internal/messaging"
 )
 
 func main() {
@@ -16,8 +17,11 @@ func main() {
 	// create a new user repository
 	userRepo := database.NewPgUserRepo(conn)
 
+	// create a new broker
+	broker := messaging.NewSNSBroker()
+
 	// create a new user controller
-	userController := handlers.NewUserController(userRepo)
+	userController := handlers.NewUserController(userRepo, broker)
 
 	app := http.NewServeMux()
 	app.Handle("/users", userController)
