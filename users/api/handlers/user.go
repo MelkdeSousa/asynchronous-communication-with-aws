@@ -14,6 +14,7 @@ import (
 
 type UserController struct {
 	userRepo contracts.UserRepo
+	broker   contracts.Broker
 }
 
 var (
@@ -21,9 +22,10 @@ var (
 	UsersRe      = regexp.MustCompile(`^/users$`)
 )
 
-func NewUserController(r contracts.UserRepo) *UserController {
+func NewUserController(r contracts.UserRepo, b contracts.Broker) *UserController {
 	return &UserController{
 		userRepo: r,
+		broker:   b,
 	}
 }
 
@@ -59,6 +61,15 @@ func (c *UserController) CreateUser(w http.ResponseWriter, r *http.Request) {
 		ID:   uuid.New().String(),
 		Name: user.Name,
 	})
+
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	userCreatedJson, _ := json.Marshal(user)
+
+	err = c.broker.Publish(contracts.UserCreated, userCreatedJson)
 
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
