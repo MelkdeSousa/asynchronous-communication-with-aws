@@ -23,6 +23,17 @@ services:
         volumes:
             - pg_data_users:/bitnami/postgresql
 
+    localstack:
+        image: localstack/localstack
+        ports:
+            - '127.0.0.1:4566:4566' # LocalStack Gateway
+            - '127.0.0.1:4510-4559:4510-4559' # external services port range
+        environment:
+            - LOCALSTACK_AUTH_TOKEN=${LOCALSTACK_AUTH_TOKEN}
+            - DEBUG=1
+        volumes:
+            - './.docker/localstack/seed-messaging.sh:/etc/localstack/init/ready.d/seed-messaging.sh'
+
 volumes:
     pg_data_points:
     pg_data_users:
